@@ -34,7 +34,7 @@ li {
 }
 
 li:hover {
-	background-color: cornflowerblue;
+	background-color: skyblue;
 }
 
 /* Title */
@@ -47,6 +47,9 @@ li:hover {
 #Adiv {
 	background-color: #720e9e;
 	grid-area: adiv;
+	margin: 1px;
+	padding: 4px;
+	border: #2F4F4F;
 }
 
 /* B Words */
@@ -79,18 +82,21 @@ li:hover {
 }
 
 /* Responsive layout */
+/* Desktop layout */
 @media only screen and (min-width: 1024px) {
 	body {
-		grid-template-areas: "title title title" "adiv cdiv ddiv bdiv" "foot foot foot";
+		grid-template-areas: "title title title title" "adiv cdiv ddiv bdiv" "foot foot foot foot";
 	}
 }
 
+/* Tablet layout */
 @media only screen and (max-width: 650px) {
 	body {
 		grid-template-areas: "title title" "adiv bdiv" "cdiv ddiv" "foot foot";
 	}
 }
 
+/* Mobile layout */
 @media only screen and (max-width: 440px) {
 	body {
 		grid-template-areas: "title" "adiv" "bdiv" "cdiv" "ddiv" "foot";
