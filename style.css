@@ -31,13 +31,14 @@ ul {
 }
 
 li {
-	width: 80px;
+	width: 100px;
 	height: 30px;
-	margin: 1px;
-	padding: 4px;
+	margin: 5px;
+	padding: 5px;
 	transition: 0.3s;
 	background-color: white;
 	border: 1px solid black;
+	text-align: center;
 }
 
 li:hover {
@@ -104,33 +105,32 @@ li:hover {
 
 	#Bdiv {
 		width: 25%;
-		float: left;
+		float: right;
 	}
 }
 
 /* Tablet layout */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-	#Adiv {
-		width: 50%;
+    .set {
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    #Adiv, #Bdiv {
+        width: 50%;
+        float: left;
+    }
+    #Cdiv, #Ddiv {
+        clear: both;
 		float: left;
-	}
-
+    }
 	#Bdiv {
-		width: 50%;
-		float: right;
-		margin-top: -58.9%;
-	}
+        clear: right;
+    }
 
-	#Cdiv {
-		width: 50%;
-		float: left;
-		clear: left;
-	}
-
-	#Ddiv {
-		width: 50%;
-		float: right;
-		clear: right;
+	#Ddiv{
+		clear:right
 	}
 }
 
